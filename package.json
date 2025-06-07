@@ -8,23 +8,22 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "biome lint . --apply-unsafe",
+    "lint": "biome lint . --write --unsafe",
     "format": "biome format . --write",
     "check": "biome check ."
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "astro": "^4.16.16",
-    "typescript": "^5.7.2"
+    "astro": "^5.9.1",
+    "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@unocss/reset": "0.65.0-beta.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.5.2",
     "unocss": "0.65.0-beta.2"
   },
   "lint-staged": {
@@ -37,5 +36,6 @@
       "biome lint --write --no-errors-on-unmatched"
     ],
     "*": ["biome check --no-errors-on-unmatched --files-ignore-unknown=true"]
-  }
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }
